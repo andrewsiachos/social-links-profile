@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body{
+    background-color: hsl(0, 0%, 8%);
+}
+img{
+    display: block;
+}
+
+main{
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 12%);
+    color: hsl(0, 0%, 100%);
+    width: 390px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+}
+.profilePic{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: auto;
+}
+#info{
+    margin-top: 30px;
+    text-align: center;
+}
+#info #name{
+    font-size: 26px;
+}
+#info #location{
+    color: hsl(75, 94%, 57%);
+    font-size: 15px;
+    margin-top: 14px;
+}
+#info #about{
+    margin-top: 30px;
+    font-size: 14px;
+}
+#linkContainer{
+    margin-top: 25px;
+    list-style-type: none;
+}
+#linkContainer li{
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 20%);
+    margin-top: 15px;
+    text-align: center;
+}
+.socialLink{
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+
+}
+.socialLink:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: black;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.footerLink, .footerLink:visited{
+    color: hsl(0, 0%, 100%);
+}
+.footerLink:hover{
+    color:hsl(75, 94%, 57%);
+}
+
+@media(max-width: 768px){
+    main{
+        width: 88%;
+        position: static;
+        transform: translate(0,0);
+        margin: 15px auto;
+    }
+
+    footer{
+        position: static;
+    }
+}
